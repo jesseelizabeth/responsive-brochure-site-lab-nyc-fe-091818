@@ -1,0 +1,113 @@
+body {
+  background-color: rgb(215, 223, 238);
+  font-family: Sans-Serif;
+}
+
+header {
+  height: 100vh;
+}
+
+a {
+  color: white;
+  font-size: 25px;
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+  margin: 30vh 60px 0px 40px;
+  text-align: center;
+}
+
+.container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(28, 42, 68, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container ul li {
+   margin: 20px 20px;
+}
+
+li a {
+  text-decoration: none;
+  text-align: center;
+}
+
+li a:hover {
+    background-color: none;
+    color: grey;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.button {
+  font-size: 40px;
+  background-color: rgb(28, 42, 68, 0.3);
+  text-decoration: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  margin-top: 50px;
+  width: 20%;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: rgb(61, 177, 255);
+}
+
+.my-work {
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  width: 20%;
+  height: 20%;
+  padding: 60px;
+  border: 6px solid white;
+}
+
+img:hover {
+    background-color: white;
+}
+
+@media screen and (max-width: 800px) {
+  img {
+    width: 80%;
+    height: 80%;
+  }
+  .my-work {
+  flex-direction: column;
+  align-items: center;
+  }
+  .container ul {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+  }
+  h1 {
+    margin-top: 260px;
+    font-size: 40px;
+  }
+  .button {
+    font-size: 20px;
+  }
+  a {
+    font-size: 16px;
+  }
+}
+
